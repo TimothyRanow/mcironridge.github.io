@@ -1,0 +1,134 @@
+html,
+body {
+	background-image: url(http://i.imgur.com/zpXhnaC.png);
+	font-family: 'Ubuntu', sans-serif;
+	color: #999999;
+		/*sticky footer adapted from http://timothylong.com/responsive-sticky-footer/*/
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  display: table-row;
+  height: 1px;
+}
+
+.push {
+  height: auto;
+}
+/*end sticky footer*/
+
+body {
+	padding-top: 3.25em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 8px;
+    background-color: #4C4C4C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+li {
+	float: left;
+}
+
+li a:hover {
+	background-color: #4C7F99;
+}
+
+.static:hover {
+	background-color: #4C4C4C;
+}
+
+li a {
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+	font-size: medium;
+	font-size: 1.25em;
+}
+
+main {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+iframe {
+	border-style: solid;
+	border-width: 4px;
+	border-color: #4C7F99;
+	width: 80%;
+	max-width: 60em;
+	height: 80%;
+	min-height: 60em;
+	background-color: #4C4C4C;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.textbox {
+	border-style: solid;
+	border-width: 4px;
+	border-color: #4C7F99;
+	background-color: #4C4C4C;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	opacity: .84;
+	padding: 2em 2em;
+	width: 80%;
+	max-width: 56em;
+	margin: auto;
+}
+
+.textbox h1 {
+	font-size: 1em;
+	font-weight: medium;
+	color: white;
+	opacity: 1;
+	margin-top: -.5em;
+	float: right;
+}
+
+.textbox h2 {
+	font-size: 1em;
+	font-weight: medium;
+	color: white;
+	opacity: 1;
+	margin-bottom: -.5em;
+}
+
+.textbox p {
+	color: white;
+	opacity: 1;
+	padding-top: 1.25em;
+	margin: 0;
+}
+
+footer {
+	font-size: 1em;
+	position: inherit;
+	right: 0px;
+	top: 100%;
+	left: 0;
+	text-align: center;
+	opacity: .5;
+}
