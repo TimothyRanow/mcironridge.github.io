@@ -66,7 +66,7 @@ li a {
 	color: #FFFFFF;
 	display: block;
 	font-size: 1.25em;
-	font-size: medium;
+	font-weight: medium;
 	padding: 1em;
 	text-align: center;
 	text-decoration: none;
@@ -120,7 +120,7 @@ code {
 .textbox h1, #IP h1 {
 	color: white;
 	float: right;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-weight: medium;
 	margin-top: -.5em;
 	opacity: 1;
@@ -128,7 +128,7 @@ code {
 
 .textbox h2, #IP h2 {
 	color: white;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-weight: medium;
 	margin-bottom: -.5em;
 	opacity: 1;
@@ -136,6 +136,7 @@ code {
 
 .textbox p, #IP p {
 	color: white;
+	font-size: 1.2em;
 	margin: 0;
 	opacity: 1;
 	padding-top: .5em;
