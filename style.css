@@ -1,32 +1,36 @@
 html,
 body {
 	background-image: url(http://i.imgur.com/zpXhnaC.png);
-	font-family: 'Ubuntu', sans-serif;
 	color: #999999;
-		/*sticky footer adapted from http://timothylong.com/responsive-sticky-footer/*/
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+
+	/*sticky footer adapted from http://timothylong.com/responsive-sticky-footer/*/
+
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100%;
 	min-height: 100%;
+	width: 100%;
+}
+
+.container {
+	display: table;
 	width: 100%;
 	height: 100%;
 }
 
-.container {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
 .block {
-  display: table-row;
-  height: 1px;
+	display: table-row;
+	height: 1px;
 }
 
 .push {
-  height: auto;
+	height: auto;
 }
+
 /*end sticky footer*/
 
 body {
@@ -34,17 +38,16 @@ body {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-right: 8px;
-    background-color: #4C4C4C;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	background-color: #4C4C4C;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	left: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
 }
 
 li {
@@ -60,75 +63,90 @@ li a:hover {
 }
 
 li a {
-	display: block;
 	color: #FFFFFF;
-	text-align: center;
-	padding: 1em;
-	text-decoration: none;
-	font-size: medium;
+	display: block;
 	font-size: 1.25em;
+	font-size: medium;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
 }
 
 main {
-	margin-top: 4em;
 	margin-bottom: 4em;
+	margin-top: 4em;
 }
 
 iframe {
+	background-color: #4C4C4C;
+	border-color: #4C7F99;
 	border-style: solid;
 	border-width: 4px;
-	border-color: #4C7F99;
-	width: 80%;
-	max-width: 60em;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.dynmap, .app {
 	height: 80%;
 	min-height: 60em;
+	width: 84%;
+}
+
+.textbox, #IP {
 	background-color: #4C4C4C;
-   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-color: #4C7F99;
+	border-style: solid;
+	border-width: 4px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: auto;
+	opacity: .84;
+	padding: 2em 2em;
+	text-align: justify;
+}
+
+#IP {
+	margin: auto;
+	width: 24em;
+}
+
+code {
+	font-size: 2em;
 }
 
 .textbox {
-	border-style: solid;
-	border-width: 4px;
-	border-color: #4C7F99;
-	background-color: #4C4C4C;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	opacity: .84;
-	padding: 2em 2em;
-	width: 80%;
 	max-width: 56em;
-	margin: auto;
+	width: 80%;
 }
 
-.textbox h1 {
-	font-size: 1em;
-	font-weight: medium;
+.textbox h1, #IP h1 {
 	color: white;
-	opacity: 1;
-	margin-top: -.5em;
 	float: right;
-}
-
-.textbox h2 {
 	font-size: 1em;
 	font-weight: medium;
-	color: white;
+	margin-top: -.5em;
 	opacity: 1;
-	margin-bottom: -.5em;
 }
 
-.textbox p {
+.textbox h2, #IP h2 {
 	color: white;
+	font-size: 1em;
+	font-weight: medium;
+	margin-bottom: -.5em;
 	opacity: 1;
-	padding-top: 1.25em;
+}
+
+.textbox p, #IP p {
+	color: white;
 	margin: 0;
+	opacity: 1;
+	padding-top: .5em;
 }
 
 footer {
 	font-size: 1em;
+	left: 0;
+	opacity: .5;
 	position: inherit;
 	right: 0px;
-	top: 100%;
-	left: 0;
 	text-align: center;
-	opacity: .5;
+	top: 100%;
 }
