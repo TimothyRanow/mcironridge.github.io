@@ -1,16 +1,13 @@
 html,
 body {
 	background-image: url(http://i.imgur.com/zpXhnaC.png);
-	color: #999999;
-	font-family: 'Ubuntu', sans-serif;
-	margin: 0;
-
-	/*sticky footer adapted from http://timothylong.com/responsive-sticky-footer/*/
-
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	color: #999999;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
 	height: 100%;
 	min-height: 100%;
 	width: 100%;
@@ -31,10 +28,7 @@ body {
 	height: auto;
 }
 
-/*end sticky footer*/
-
-body {
-	padding-top: 3.25em;
+header {
 }
 
 ul {
@@ -76,6 +70,7 @@ li a {
 main {
 	margin-bottom: 4em;
 	margin-top: 4em;
+	padding-top: 4em;
 }
 
 iframe {
@@ -109,16 +104,12 @@ iframe {
 	width: 24em;
 }
 
-code {
-	font-size: 2em;
-}
-
 .textbox {
 	max-width: 56em;
 	width: 80%;
 }
 
-.textbox h1, #IP h1 {
+h1 {
 	color: white;
 	float: right;
 	font-size: 1.25em;
@@ -127,7 +118,7 @@ code {
 	opacity: 1;
 }
 
-.textbox h2, #IP h2 {
+h2 {
 	color: white;
 	font-size: 1.25em;
 	font-weight: medium;
@@ -140,7 +131,10 @@ code {
 	font-size: 1.2em;
 	margin: 0;
 	opacity: 1;
-	padding-top: .5em;
+}
+
+code {
+	font-size: 2em;
 }
 
 footer {
