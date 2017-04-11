@@ -31,7 +31,7 @@ body {
 header {
 }
 
-ul {
+header ul {
 	background-color: #4C4C4C;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	font-weight: medium;
@@ -45,11 +45,11 @@ ul {
 	width: 100%;
 }
 
-li {
+header ul li {
 	float: left;
 }
 
-li a:hover {
+header ul li a:hover {
 	background-color: #4C7F99;
 }
 
@@ -57,7 +57,7 @@ li a:hover {
 	background-color: #4C4C4C;
 }
 
-li a {
+header ul li a {
 	color: #FFFFFF;
 	display: block;
 	font-size: 1.25em;
@@ -81,7 +81,14 @@ iframe {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.dynmap, .app {
+.dynmap {
+	margin-top: -4em;
+	height: 80%;
+	min-height: 60em;
+	width: 84%;
+}
+
+.app {
 	height: 80%;
 	min-height: 60em;
 	width: 84%;
@@ -127,6 +134,13 @@ h2 {
 }
 
 .textbox p, #IP p {
+	color: white;
+	font-size: 1.2em;
+	margin: 0;
+	opacity: 1;
+}
+
+.textbox ul {
 	color: white;
 	font-size: 1.2em;
 	margin: 0;
